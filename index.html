@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheets/style.css">
 </head>
 <body>
     <h1>Dice Roller</h1>
-    <div class="user-interface">
-       
-        <label for="number-rolled">Number of Dice</label>
-        <input type="number" name="number-rolled" placeholder="0" id="numDie">
+    <main>
+        <div id="user-interface">
+            <div class="input-fields">
+                <label for="number-rolled">Number of Dice</label>
+                <input type="number" name="number-rolled" placeholder="0" id="numDie">
 
-        </br>
+                </br>
+                
+                <label for="number-sides">Number of Sides</label>
+                <input type="number" name="number-sides" value="6" minvalue="1" id="dieSize">
+            </div>
         
-        <label for="number-sides">Number of Sides</label>
-        <input type="number" name="number-sides" value="6" minvalue="1" id="dieSize">
-        
-        </br>
-    
-        <button id="roll-button">Roll</button>
+            <button id="roll-button">Roll</button>
 
-    </div>
+        </div>
 
-    <div class="total">Total: <span id="sum"></span></div>
+        <div id="total">Total: <span id="sum"></span></div>
 
-    <button id="reveal-button">Show All Rolls</button>
-    <ol id="all-rolls"></ol>
+        <button id="reveal-button">Show All Rolls</button>
+        <ol id="all-rolls"></ol>
 
-    <button id="reset-button">Reset</button>
+        <button id="reset-button">Reset</button>
+    </main>
 
     <script src="assets/javascript/main.js"></script>
 </body>

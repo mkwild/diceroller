@@ -30,7 +30,7 @@ rollButton.addEventListener('click', function() {
         }
     }
     else {
-        sumTotal.innerText = "0"
+        sumTotal.innerText = ""
     }
 
 
@@ -38,12 +38,16 @@ rollButton.addEventListener('click', function() {
 
 revealButton.addEventListener('click', function() {
 
+    let numSides = sizeOfDie.value
+    let dieSize = numSides.length
+
     let index = 0
 
     while (index < dieRolls.length) {
         allRolls.innerHTML = allRolls.innerHTML + "<li>" + dieRolls[index] + "</li>"
         index++
     }
+
 })
 
 resetButton.addEventListener('click', function() {
