@@ -41,11 +41,8 @@ revealButton.addEventListener('click', function() {
     let numSides = sizeOfDie.value
     let dieSize = numSides.length
 
-    let index = 0
-
-    while (index < dieRolls.length) {
+    for (let index = 0; index < dieRolls.length; index++) {
         allRolls.innerHTML = allRolls.innerHTML + "<li>" + dieRolls[index] + "</li>"
-        index++
     }
 
 })
